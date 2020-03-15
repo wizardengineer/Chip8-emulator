@@ -1,5 +1,7 @@
 <h1 align="center">Chip-8 Emulator</h1>
 
+__NOTHING IS FINISH YET__
+
 what is a chip-8 emulator? 
 
 What is an emulator?
