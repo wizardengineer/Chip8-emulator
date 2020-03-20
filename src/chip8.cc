@@ -101,7 +101,26 @@ void Chip8::emulation(){
           I = opcode & 0x0FFF;
           pc += 2;
       break;
+
+      case 0x0000:
+      {
+        switch(opcode & 0x000F) {
+          case 0x00E0:
+            memset(gfx, 0, sizeof(gfx));
+            pc += 2
+          break;
+
+          case 0x00EE:
+            --sp;
+            pc = stack[sp];
+        }
       
+      }
+      break;
+      case 0x3000:
+        pc += 4; 
+
+      break;
       case 0x1000:
           stack[sp] = pc;
           ++sp;
