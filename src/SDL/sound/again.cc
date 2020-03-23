@@ -1,6 +1,4 @@
-#include <SDL2/SDL.h>
-
-#define MUS_PATH "beep-03.wav"
+#include "again.h"
 
 // prototype for our audio callback
 // see the implementation for more information
@@ -14,7 +12,7 @@ static Uint32 audio_len; // remaining length of the sample we have to play
 /*
 ** PLAYING A SOUND IS MUCH MORE COMPLICATED THAN IT SHOULD BE
 */
-int main(int argc, char* argv[]){
+int play(){
 
 	// Initialize SDL.
 	if (SDL_Init(SDL_INIT_AUDIO) < 0)
