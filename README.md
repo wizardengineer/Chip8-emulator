@@ -2,4 +2,4 @@
 
 # Chip-8 Emulator
 
-_PROJECT IS NOT FINISH YET_
+The soul purpose of this project was to attempt to learn, It's not going to be finish nor do I intend to finish it
